@@ -1,0 +1,57 @@
+{
+    "name": "silverstripe/installer",
+    "type": "silverstripe-recipe",
+    "description": "The SilverStripe Framework Installer",
+    "require": {
+        "php": "^7.1 || ^8",
+        "cwp/cwp-recipe-cms": "^2.4",
+        "cwp/cwp-recipe-search": "^2.4",
+        "nglasl/silverstripe-misdirection": "^3.1",
+        "silverstripe-themes/simple": "~3.2.0",
+        "silverstripe/recipe-form-building": "^1.4",
+        "silverstripe/recipe-authoring-tools": "^1.4",
+        "silverstripe/recipe-collaboration": "^1.4",
+        "silverstripe/recipe-reporting-tools": "^1.4",
+        "silverstripe/recipe-services": "^1.4",
+        "silverstripe/selectupload": "^2",
+        "silverstripe/textextraction": "^3.0",
+        "silverstripe/akismet": ">3",
+        "silverstripe/crontask": "^2.1",
+        "silverstripe/mfa": "^4.0",
+        "silverstripe/totp-authenticator": "^4.0",
+        "silverstripe/blog": "^3.5.0",
+        "silverstripe/comments": "^3",
+        "silverstripe/comment-notifications": "^2",
+        "silverstripe/gridfieldqueuedexport": "^2.3",
+        "symbiote/silverstripe-sesmail": "dev-master",
+        "symbiote/silverstripe-multivaluefield": "^5.0",
+        "symbiote/silverstripe-advancedworkflow": "^5.2",
+        "undefinedoffset/sortablegridfield": "^2.0"
+    },
+    "require-dev": {
+        "sminnee/phpunit": "^5.7",
+        "sminnee/phpunit-mock-objects": "^3.4.5"
+    },
+    "extra": {
+        "resources-dir": "_resources",
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/environmentcheck.yml",
+            "app/_config/mimevalidator.yml",
+            "app/_config/mysite.yml",
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "web.config"
+        ]
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
