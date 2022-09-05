@@ -3,9 +3,10 @@
     "type": "silverstripe-recipe",
     "description": "The SilverStripe Framework Installer",
     "require": {
-        "php": "^7.1 || ^8",
-        "cwp/cwp-recipe-cms": "^2.4",
-        "cwp/cwp-recipe-search": "^2.4",
+        "php": "^7.4 || ^8",
+        "silverstripe/recipe-cms": "^4.11.0",
+        "silverstripe/recipe-ccl": "^2.11.0",
+        "silverstripe/recipe-solr-search": "^2.4",
         "nglasl/silverstripe-misdirection": "^3.1",
         "silverstripe-themes/simple": "~3.2.0",
         "silverstripe/recipe-form-building": "^1.4",
@@ -29,6 +30,9 @@
         "undefinedoffset/sortablegridfield": "^2.0"
     },
     "require-dev": {
+        "silverstripe/behat-extension": "^4.5",
+        "se/selenium-server-standalone": "2.x@stable",
+        "behat/mink-selenium2-driver": "~1.1",
         "sminnee/phpunit": "^5.7",
         "sminnee/phpunit-mock-objects": "^3.4.5"
     },
@@ -49,8 +53,18 @@
             "web.config"
         ]
     },
+    "autoload": {
+        "psr-4": {
+            "MySite\\Tests\\Behat\\": "app/tests/behat/src"
+        }
+    },
     "config": {
-        "process-timeout": 600
+        "process-timeout": 600,
+        "allow-plugins": {
+            "silverstripe/recipe-plugin": true,
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true
+        }
     },
     "prefer-stable": true,
     "minimum-stability": "dev"
