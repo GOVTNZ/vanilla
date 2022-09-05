@@ -30,11 +30,9 @@
         "undefinedoffset/sortablegridfield": "^2.0"
     },
     "require-dev": {
-        "silverstripe/behat-extension": "^4.5",
+        "silverstripe/behat-extension": "^4.9",
         "se/selenium-server-standalone": "2.x@stable",
-        "behat/mink-selenium2-driver": "~1.1",
-        "sminnee/phpunit": "^5.7",
-        "sminnee/phpunit-mock-objects": "^3.4.5"
+        "behat/mink-selenium2-driver": "~1.1"
     },
     "extra": {
         "resources-dir": "_resources",

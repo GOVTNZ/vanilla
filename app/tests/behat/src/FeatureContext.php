@@ -12,20 +12,4 @@ use SilverStripe\BehatExtension\Context\SilverStripeContext;
  */
 class FeatureContext extends SilverStripeContext
 {
-    /**
-     * @var FixtureFactory
-     */
-    protected $fixtureFactory;
-
-    /**
-     * @BeforeScenario */
-    public function beforeScenarioEcho($event)
-    {
-        echo "Now executing " . $event->getScenario()->getTitle() . " Scenario\n\n";
-
-        // Copy a reference to the fixture factory.
-        $this->fixtureFactory = $event->getEnvironment()
-            ->getContext(FixtureContext::class)
-            ->getFixtureFactory();
-    }
 }
