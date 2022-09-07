@@ -6,4 +6,4 @@ Some important modules have been included that are not supported but are popular
 
 Installation process is similar to any other Silverstripe product.
 
-As of 20210429 the composer.json pulls in the latest versions of the dependencies.
+As of 20220907 the composer.json pulls in the latest versions of the dependencies.
