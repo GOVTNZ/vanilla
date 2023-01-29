@@ -4,7 +4,7 @@
     "description": "The SilverStripe Framework Installer",
     "require": {
         "php": "^7.4 || ^8",
-        "silverstripe/recipe-cms": "^4.11.0",
+        "silverstripe/recipe-cms": "~4.11.0",
         "silverstripe/recipe-ccl": "^2.11.0",
         "silverstripe/recipe-solr-search": "^2.4",
         "nglasl/silverstripe-misdirection": "^3.1",
