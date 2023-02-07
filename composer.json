@@ -27,7 +27,8 @@
         "symbiote/silverstripe-sesmail": "dev-master",
         "symbiote/silverstripe-multivaluefield": "^5.0",
         "symbiote/silverstripe-advancedworkflow": "^5.2",
-        "undefinedoffset/sortablegridfield": "^2.0"
+        "undefinedoffset/sortablegridfield": "^2.0",
+        "tijsverkoyen/akismet": "dev-master as 1.1.0"
     },
     "require-dev": {
         "silverstripe/behat-extension": "^4.9",
