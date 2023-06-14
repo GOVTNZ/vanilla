@@ -14,3 +14,16 @@ SilverStripe\ORM\Connect\MySQLDatabase:
   connection_collation: utf8mb4_unicode_ci
   charset: utf8mb4
   collation: utf8mb4_unicode_ci
+---
+Name: you-know-search
+---
+SilverStripe\SearchService\Service\IndexConfiguration:
+  indexes:
+    mysiteindex:
+      includeClasses:
+        SilverStripe\CMS\Model\SiteTree:
+          fields:
+            title:
+              property: Title
+              options:
+                type: text

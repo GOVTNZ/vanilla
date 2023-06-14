@@ -4,9 +4,8 @@
     "description": "The SilverStripe Framework Installer",
     "require": {
         "php": "^7.4 || ^8",
-        "silverstripe/recipe-cms": "^4.12.0",
-        "silverstripe/recipe-ccl": "^2.12.0",
-        "silverstripe/recipe-solr-search": "^2.4",
+        "silverstripe/recipe-cms": "^4.13.0",
+        "silverstripe/recipe-ccl": "^2.13.0",
         "nglasl/silverstripe-misdirection": "^3.1",
         "silverstripe-themes/simple": "~3.2.0",
         "silverstripe/recipe-form-building": "^1.4",
@@ -27,7 +26,8 @@
         "symbiote/silverstripe-sesmail": "dev-master",
         "symbiote/silverstripe-multivaluefield": "^5.0",
         "symbiote/silverstripe-advancedworkflow": "^5.2",
-        "undefinedoffset/sortablegridfield": "^2.0"
+        "undefinedoffset/sortablegridfield": "^2.0",
+        "silverstripe/silverstripe-search-service": "^2.1"
     },
     "require-dev": {
         "silverstripe/behat-extension": "^4.9",
@@ -61,7 +61,8 @@
         "allow-plugins": {
             "silverstripe/recipe-plugin": true,
             "composer/installers": true,
-            "silverstripe/vendor-plugin": true
+            "silverstripe/vendor-plugin": true,
+            "php-http/discovery": true
         }
     },
     "prefer-stable": true,
